@@ -180,57 +180,62 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Diva Diamonds */}
-              <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-pink-100 relative overflow-hidden">
-                  <img
-                    src="/luxury-jewelry-store-website-design.jpg"
-                    alt="Diva Diamonds website"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-sm font-medium text-primary">Santa Fe</span>
-                    <span className="text-muted-foreground">•</span>
-                    <span className="text-sm text-muted-foreground">Jewelry</span>
+              {/* Lowdown Helmets */}
+              <Link href="/work/lowdown-helmets">
+                <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
+                  <div className="aspect-video bg-gradient-to-br from-purple-100 to-pink-100 relative overflow-hidden">
+                    <img
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lowdown-12-tbX8UrbGGBxqV0gC1gR2MQbVyxAuyt.jpg"
+                      alt="Lowdown Helmets photo shoot"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Diva Diamonds</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    From lost in search to #1 jewelry site in Santa Fe. Traffic and calls up with brand tune-up and SEO.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <ProofChip label="#1 local rank" />
-                    <ProofChip label="Traffic ↑ 3x" />
+                  <div className="p-8">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-sm font-medium text-primary">Aspen</span>
+                      <span className="text-muted-foreground">•</span>
+                      <span className="text-sm text-muted-foreground">Outdoor Gear</span>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Lowdown Helmets</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                      Professional photo and video production capturing the adventure lifestyle and premium quality of
+                      Lowdown's innovative helmet designs.
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <ProofChip label="Photo & Video" />
+                      <ProofChip label="Brand Storytelling" />
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
 
               {/* Coops Auto Detailing */}
-              <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 relative overflow-hidden">
-                  <img
-                    src="/auto-detailing-service-website-modern-design.jpg"
-                    alt="Coops Auto Detailing website"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-sm font-medium text-primary">Albuquerque</span>
-                    <span className="text-muted-foreground">•</span>
-                    <span className="text-sm text-muted-foreground">Auto Services</span>
+              <Link href="/work/coops-auto-detailing">
+                <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
+                  <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 relative overflow-hidden">
+                    <img
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-29%20at%202.53.47%E2%80%AFPM-VNpFnH90Ffl36XW1XoGIadT5Wceh71.jpg"
+                      alt="Coops Auto Detailing website"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Coops Auto Detailing</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    New site with performance fixes doubled bookings. Site score in 90th percentile locally.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <ProofChip label="Bookings ↑ 2x" />
-                    <ProofChip label="90th percentile" />
+                  <div className="p-8">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-sm font-medium text-primary">Rio Rancho</span>
+                      <span className="text-muted-foreground">•</span>
+                      <span className="text-sm text-muted-foreground">Auto Services</span>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Coops Auto Detailing</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                      New site with performance fixes doubled bookings. Site score in 90th percentile locally.
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <ProofChip label="Bookings ↑ 2x" />
+                      <ProofChip label="90th percentile" />
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </div>
 
             <div className="mt-8 text-center md:hidden">
