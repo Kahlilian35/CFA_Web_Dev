@@ -11,60 +11,41 @@ import Link from "next/link"
 
 const caseStudies = [
   {
-    slug: "diva-diamonds",
-    title: "Diva Diamonds",
-    location: "Santa Fe",
-    industry: "Jewelry",
-    image: "/luxury-jewelry-store-website-design.jpg",
-    description: "From lost in search to #1 jewelry site in Santa Fe",
-    tags: ["#1 local rank", "Traffic ↑ 3x"],
-    objective: "Local SEO",
+    slug: "lowdown-helmets",
+    title: "Lowdown Helmets",
+    location: "Aspen",
+    industry: "Outdoor Gear",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lowdown-12-tbX8UrbGGBxqV0gC1gR2MQbVyxAuyt.jpg",
+    description: "Lifestyle photography and video content that became their marketing foundation",
+    tags: ["Photography", "Video Production"],
+    objective: "Brand Strategy",
   },
   {
     slug: "coops-auto-detailing",
     title: "Coops Auto Detailing",
     location: "Albuquerque",
     industry: "Auto Services",
-    image: "/auto-detailing-service-website-modern-design.jpg",
-    description: "Doubled bookings with new site and performance optimization",
-    tags: ["Bookings ↑ 2x", "90th percentile"],
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-29%20at%202.53.47%E2%80%AFPM-VNpFnH90Ffl36XW1XoGIadT5Wceh71.jpg",
+    description: "Website redesign and SEO strategy that drove 2-month booking backlog",
+    tags: ["Web Design", "90th percentile SEO"],
     objective: "Website",
   },
   {
-    slug: "lowdown-helmets",
-    title: "Lowdown Helmets",
+    slug: "nourish-durango",
+    title: "Nourish Durango",
     location: "Durango",
-    industry: "Outdoor Gear",
-    image: "/outdoor-sports-helmet-brand-website.jpg",
-    description: "Premium brand identity and e-commerce launch",
-    tags: ["Brand Launch", "E-commerce"],
+    industry: "Food & Wellness",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nourish-8-5Uw2kY07lJJ893Jj9UL5YvaHJddqFW.jpg",
+    description: "Visual storytelling that captured the heart of a wellness brand",
+    tags: ["Photography", "Video Production"],
     objective: "Brand Strategy",
-  },
-  {
-    slug: "desert-sun-coffee",
-    title: "Desert Sun Coffee",
-    location: "Farmington",
-    industry: "Food & Beverage",
-    image: "/coffee-shop-website-modern-design.jpg",
-    description: "AI assistant handles customer questions 24/7",
-    tags: ["AI Assistant", "Support ↓ 60%"],
-    objective: "AI",
-  },
-  {
-    slug: "nourish-nutrition",
-    title: "Nourish Nutrition",
-    location: "Santa Fe",
-    industry: "Health & Wellness",
-    image: "/nutrition-wellness-website-design.jpg",
-    description: "Content system generates 50+ assets per month",
-    tags: ["Content ↑ 5x", "Engagement ↑ 200%"],
-    objective: "Content",
   },
 ]
 
 const filters = {
-  industry: ["All", "Jewelry", "Auto Services", "Outdoor Gear", "Food & Beverage", "Health & Wellness"],
-  objective: ["All", "Local SEO", "Website", "Brand Strategy", "AI", "Content"],
+  industry: ["All", "Outdoor Gear", "Auto Services", "Food & Wellness"],
+  objective: ["All", "Brand Strategy", "Website"],
 }
 
 export default function WorkPage() {
@@ -180,68 +161,73 @@ export default function WorkPage() {
         </div>
       </section>
 
+      {/* Behind the Scenes */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Behind the Scenes</h2>
             <p className="text-lg text-black/80 font-medium">
-              A glimpse into our work with Four Corners businesses—from catering events to outdoor adventures.
+              A glimpse into our work with Four Corners businesses—from wellness brands to outdoor adventures.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Catering/Food Service Image 1 */}
+            {/* Nourish - Woman with meal container */}
             <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8EBC0B7A-91DE-432C-B96F-E5E4F9F660EE-5oA66mQnJLVC09unHXnImkdmJQeOFo.jpeg"
-                alt="Catering service with food displays"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nourish-8-5Uw2kY07lJJ893Jj9UL5YvaHJddqFW.jpg"
+                alt="Nourish Durango brand photography"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            {/* Skiing Portrait */}
+            {/* Lowdown Helmets - Gold helmet portrait */}
             <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lowdown-12-Bjz1gCGVk5WTvBngQVFC5kBpTdMUmI.jpeg"
-                alt="Lowdown Helmets brand photography"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lowdown-12-tbX8UrbGGBxqV0gC1gR2MQbVyxAuyt.jpg"
+                alt="Lowdown Helmets lifestyle photography"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            {/* Skiing Action Shots */}
+            {/* Toastee Club - Brand work */}
             <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/C3E3BBD4-FC71-431C-9FB1-10C0C30BBB27-Rho2BwyncYrhUUXYHlFE71rRLHR12i.jpeg"
-                alt="Action skiing photography"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/INDIA-14%20%281%29-jt5lDnfxqiMqVXhIWD2Phz2i1ISg8V.jpg"
+                alt="Toastee Club brand photography"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            {/* Catering/Food Service Image 2 */}
+            {/* Nourish - Meal prep service */}
             <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/F3B67330-B993-42AB-94C2-932CCFB44945-iipd85BNSZbfCAwQ6XL9SbzUc5BMo4.jpeg"
-                alt="Professional catering setup"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nourish-19-zluDCVN1EuTW9a1c9mmBI1wA22IPDu.jpg"
+                alt="Nourish meal preparation"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            {/* Video - spans 2 columns on larger screens */}
-            <div className="group relative overflow-hidden rounded-lg aspect-[3/4] md:col-span-2 lg:col-span-2 bg-gradient-to-br from-purple-100 to-pink-100">
-              <video
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/copy_69815238-1100-492C-A6FD-82ABFF6E938F-X7jZ1p3shbyxRWitZeihBLZtv00TiY.mov"
-                className="w-full h-full object-cover"
-                controls
-                playsInline
-                preload="metadata"
-              >
-                Your browser does not support the video tag.
-              </video>
+            {/* Nourish - Team collaboration */}
+            <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nourish-14-5J2DM0XGAlZSYBoYBCqQpT24qwrju4.jpg"
+                alt="Nourish team working together"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Coop's Auto Detailing - Collage */}
+            <div className="group relative overflow-hidden rounded-lg aspect-[3/4] bg-gradient-to-br from-purple-100 to-pink-100">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q1Q4CtxLSgUiLt1UOi4zwzy4K7oq9E.jpg"
+                alt="Coop's Auto Detailing work showcase"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
           </div>
         </div>
       </section>
-      {/* </CHANGE> */}
 
       {/* CTA */}
       <section className="py-20 gradient-hero">
